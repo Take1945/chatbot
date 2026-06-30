@@ -27,7 +27,7 @@ const App: React.FC = () => {
     setCurrentChat({ question: questionText, answer: null, sources: [] });
 
     try {
-      const response = await fetch(`${import.meta.env.NEXT_PUBLIC_API_URL}/api/chat`
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/chat`
         , {
         method: "POST",
         headers: { "Content-Type": "application/json" },
