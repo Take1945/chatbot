@@ -8,7 +8,7 @@ load_dotenv(dotenv_path=env_path)
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.chat   import router as chat_router
-from app.api.ingest import router as ingest_router
+
 
 app = FastAPI(title="RAG Chatbot API")
 
