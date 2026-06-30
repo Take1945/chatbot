@@ -14,7 +14,7 @@ app = FastAPI(title="RAG Chatbot API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:8000","https://chat-bot.vercel.app"],
+    allow_origins=["http://localhost:5173", "http://localhost:8000","https://chat-risyu-bot.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -29,7 +29,7 @@ def get_vector_store() -> PGVector:
 
     return PGVector(
         embeddings=get_embeddings(),
-        collection_name=COLLECTION_NAME,  # ★追加
+        collection_name=COLLECTION_NAME,  
         connection=final_url,
         async_mode=True,
         use_jsonb=True,
