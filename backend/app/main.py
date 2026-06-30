@@ -14,7 +14,7 @@ app = FastAPI(title="RAG Chatbot API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:8000"],
+    allow_origins=["http://localhost:5173", "http://localhost:8000","https://chat-bot.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -23,6 +23,3 @@ app.add_middleware(
 app.include_router(chat_router)
 
 
-@app.get("/health")
-def health():
-    return {"status": "ok"}
