@@ -27,7 +27,8 @@ const App: React.FC = () => {
     setCurrentChat({ question: questionText, answer: null, sources: [] });
 
     try {
-      const response = await fetch("http://localhost:8000/api/chat", {
+      const response = await fetch('${<process.env.NEXT_PUBLIC_API_URL/api/chat'
+        , {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: questionText }),
